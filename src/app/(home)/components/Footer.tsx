@@ -17,38 +17,38 @@ const Footer = () => {
     {
       title: "About",
       links: [
-        { text: "About Us", href: "/pages/our-story" },
-        { text: "Our Stores", href: "/pages/our-stores" },
+        { text: "About Us", href: "/our-story" },
+        { text: "Our Stores", href: "/our-stores" },
         {
           text: "Desk Fashion Knitting Mills",
-          href: "/pages/buck-mason-knitting-mills",
+          href: "/buck-mason-knitting-mills",
         },
-        { text: "Careers", href: "/pages/careers" },
+        { text: "Careers", href: "/careers" },
         { text: "Gift Cards", href: "/products/gift" },
-        { text: "Site Map", href: "/pages/sitemap" },
+        { text: "Site Map", href: "/sitemap" },
       ],
     },
     {
       title: "Connect",
       links: [
-        { text: "Contact Us", href: "/pages/faq" },
+        { text: "Contact Us", href: "/faq" },
         {
           text: "Instagram",
-          href: "https://instagram.com/buckmason",
+          href: "https://instagram.com/deckfashion",
           external: true,
         },
         {
           text: "Facebook",
-          href: "https://www.facebook.com/buckmason",
+          href: "https://www.facebook.com/deckfashion",
           external: true,
         },
-        { text: "Affiliates", href: "/pages/affiliates" },
+        { text: "Affiliates", href: "/affiliates" },
         {
           text: "Catalog Opt-Out",
           href: "https://docs.google.com/forms/d/e/1FAIpQLSfT8cwcMjVR9Hh8BeWFZ_RmeGb0TKgKkRNfGDuImenLaXksRA/viewform?fbzx=6450071408919949252",
           external: true,
         },
-        { text: "FAQ", href: "/pages/faq" },
+        { text: "FAQ", href: "/faq" },
       ],
     },
     {
@@ -56,20 +56,20 @@ const Footer = () => {
       links: [
         {
           text: "Log-In",
-          href: "https://orders.buckmason.com/auth",
+          href: "https://orders.deckfashion.com/auth",
           external: true,
         },
         {
           text: "Returns + Exchanges",
-          href: "https://orders.buckmason.com/returns",
+          href: "https://orders.deckfashion.com/returns",
           external: true,
         },
         {
           text: "Track Package",
-          href: "https://orders.buckmason.com/",
+          href: "https://orders.deckfashion.com/",
           external: true,
         },
-        { text: "Gift Card Balance", href: "/pages/gift-card-balance" },
+        { text: "Gift Card Balance", href: "/gift-card-balance" },
       ],
     },
   ];
