@@ -1,6 +1,5 @@
 "use client";
 
-import ArrowIcon from "@/components/ArrowIcon";
 import { useState } from "react";
 import FooterAccordion from "./FooterAccordions";
 
@@ -76,23 +75,19 @@ const Footer = () => {
   ];
 
   const legalLinks = [
-    { text: "Privacy Policy", href: "/pages/privacy" },
-    { text: "Accessibility", href: "/pages/accessibility" },
-    {
-      text: "Customer Data Request Form",
-      href: "/pages/customer-data-request-form",
-    },
-    { text: "Terms of Service", href: "/pages/terms" },
+    { text: "Privacy Policy", href: "/privacy" },
+    { text: "Terms of Service", href: "/terms" },
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-300 text-lg">
-      <div className="relative box-border mx-auto  max-w-[1550px] w-[94%] px-4 md:px-0 lg:px-8 xl:px-0 border border-gray-300 border-l-0 border-r-0 my-14 py-14 md:my-14 md:py-14">
-        <div className="mb-14 md:mb-0 order-0">
-          <label htmlFor="email" className="block mb-4">
+    <footer className="bg-white border-t border-gray-300 text-lg mt-24">
+      <div className="relative box-border mx-auto  max-w-[1550px] w-[94%] px-4 md:px-0 lg:px-8 xl:px-0 border border-gray-300 border-l-0 border-r-0 border-t-0 my-14 py-14 md:my-14 md:py-14">
+        <div className="mb-14 md:mb-0 order-0 md:flex items-center gap-5">
+          <label htmlFor="email" className="block mb-4 text-nowrap">
             Sign Up for Complimentary Shipping and the Latest News
           </label>
-          <div className="flex">
+          <div className="2xl:mx-30" />
+          <div className="flex w-full">
             <input
               className="flex-1 px-4 py-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
               type="email"
@@ -121,6 +116,7 @@ const Footer = () => {
           <div className="font-condensed text-lg tracking-wide uppercase mb-8 md:mb-8">
             Come Visit Us
           </div>
+          <div className="text-[80px] font-extrabold -mt-10">DeCK</div>
           <div className="font-condensed text-lg tracking-wide uppercase mt-4">
             <p>
               <a
@@ -130,7 +126,7 @@ const Footer = () => {
                 <span className="inline-block transform -translate-y-1 mr-1">
                   [
                 </span>
-                <span>Find a Store</span>
+                <span>Find Us</span>
                 <span className="inline-block transform -translate-y-1 ml-1">
                   ]
                 </span>
@@ -152,54 +148,12 @@ const Footer = () => {
 
       <div className="relative box-border mx-auto  max-w-[1550px] w-[94%] px-4 md:px-0 lg:px-8 xl:px-0 flex flex-col md:flex-row mt-14">
         <div className="flex-1 order-1 md:order-none border-t border-gray-300 md:border-none py-4 md:py-0">
-          <div className="md:hidden">
-            <button
-              type="button"
-              className="block relative w-full py-4 font-condensed tracking-wide uppercase text-left"
-              aria-expanded={openAccordions.privacy}
-              onClick={() => toggleAccordion("privacy")}
-            >
-              Privacy
-              <ArrowIcon
-                direction="left"
-                className={`absolute right-1 top-1/2 transform -translate-y-1/2 transition-transform ${
-                  openAccordions.privacy ? "rotate-90" : "-rotate-90"
-                }`}
-              />
-            </button>
-            <ul
-              className={`
-              overflow-hidden transition-all duration-200 max-h-[30rem]
-              ${openAccordions.privacy ? "pb-4" : "max-h-0"}
-            `}
-            >
-              {legalLinks.map((link, index) => (
-                <li key={index} className={index > 0 ? "mt-4" : ""}>
-                  <a
-                    className="block text-sm leading-none text-decoration-none hover:underline"
-                    href={link.href}
-                  >
-                    {link.text}
-                  </a>
-                </li>
-              ))}
-              <li className="mt-4">
-                <button
-                  type="button"
-                  className="text-sm leading-none text-decoration-none hover:underline"
-                  id="ot-sdk-btn"
-                >
-                  Cookies Settings
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div className="hidden md:block">
-            <ul className="space-y-4">
+          <div className=" ">
+            <ul className="space-y-4 flex gap-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    className="block text-sm leading-none text-decoration-none hover:underline"
+                    className=" text-sm leading-none text-decoration-none hover:underline"
                     href={link.href}
                   >
                     {link.text}
@@ -210,7 +164,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="font-condensed text-base tracking-wide uppercase border-t border-gray-300 md:border-none py-12 md:py-0 order-0">
+        <div className="text-sm  font-condensed  tracking-wide uppercase border-t border-gray-300 md:border-none py-12 md:py-0 order-0">
           © Deck Fashion. All Rights Reserved
           <br />
           2025
