@@ -24,3 +24,6 @@
 .custom-radio input[type="radio"]:checked + label .checkboxcls::after {
   transform: translate(-50%, -50%) scale(1);
 }
+.custom-radio input[type="checkbox"]:checked + label .checkboxcls::after {
+  transform: translate(-50%, -50%) scale(1);
+}
