@@ -1,7 +1,7 @@
 "use client";
 
 import ArrowIcon from "@/components/ArrowIcon";
-import ProductTile from "@/components/ProductTile";
+import ProductCard from "@/components/ProductCard";
 import { useState } from "react";
 
 const CarouselSection = ({ title, titleHref, products, showTitle = true }) => {
@@ -62,7 +62,7 @@ const CarouselSection = ({ title, titleHref, products, showTitle = true }) => {
               key={index}
               className="flex-1 min-w-[25%] md:min-w-[calc(25%-1.5rem)] lg:min-w-[80%] opacity-100 group"
             >
-              <ProductTile product={product} />
+              <ProductCard product={product} />
             </div>
           ))}
         </div>

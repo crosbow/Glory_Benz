@@ -83,7 +83,7 @@ const Footer = () => {
     <footer className="bg-white border-t border-gray-300 text-lg mt-24">
       <div className="relative box-border mx-auto  max-w-[1550px] w-[94%] px-4 md:px-0 lg:px-8 xl:px-0 border border-gray-300 border-l-0 border-r-0 border-t-0 my-14 py-14 md:my-14 md:py-14">
         <div className="mb-14 md:mb-0 order-0 md:flex items-center gap-5">
-          <label htmlFor="email" className="block mb-4 text-nowrap">
+          <label htmlFor="email" className="block mb-4 sm:text-nowrap">
             Sign Up for Complimentary Shipping and the Latest News
           </label>
           <div className="2xl:mx-30" />

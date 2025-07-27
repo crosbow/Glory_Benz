@@ -1,6 +1,8 @@
 import Image from "next/image";
+import DetailsIcon from "./ui/DetailsIcon";
+import HeartIcon from "./ui/HeartIcon";
 
-const ProductTile = ({ product, className = "" }) => (
+const ProductCard = ({ product, className = "" }) => (
   <div className={`relative opacity-100 ${className}`}>
     <div className="relative overflow-hidden">
       <a
@@ -26,6 +28,28 @@ const ProductTile = ({ product, className = "" }) => (
                 height={400}
               />
             )}
+            <div className="bg-black/10 opacity-0 group-hover:opacity-100 absolute top-0 left-0 w-full h-full flex justify-center items-end">
+              <div>
+                <ul className="flex gap-3 mb-5 justify-center">
+                  <li
+                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center -translate-x-4 scale-95
+                   group-hover:translate-x-0 group-hover:scale-100 transition-all duration-700 "
+                  >
+                    <HeartIcon />
+                  </li>
+
+                  <li
+                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center translate-x-4 scale-95
+                   group-hover:translate-x-0 group-hover:scale-100 transition-all duration-700 "
+                  >
+                    <DetailsIcon />
+                  </li>
+                </ul>
+                <button className="bg-[#b56c22] px-4 text-white uppercase cursor-pointer mb-5 text-xs font-semibold py-2 translate-y-7 group-hover:translate-y-0 transition-all duration-700">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </a>
@@ -48,4 +72,4 @@ const ProductTile = ({ product, className = "" }) => (
     </div>
   </div>
 );
-export default ProductTile;
+export default ProductCard;

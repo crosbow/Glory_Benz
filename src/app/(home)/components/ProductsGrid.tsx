@@ -1,4 +1,4 @@
-import ProductTile from "@/components/ProductTile";
+import ProductCard from "@/components/ProductCard";
 
 const ProductsGrid = ({ title, products }) => (
   <div className="border-t border-b border-gray-300 py-24 md:py-24 mt-16 md:mt-28">
@@ -11,7 +11,7 @@ const ProductsGrid = ({ title, products }) => (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-[1.25vw]">
         {products.map((product, index) => (
           <div key={index} className="opacity-100 group">
-            <ProductTile product={product} />
+            <ProductCard product={product} />
           </div>
         ))}
       </div>

@@ -1,9 +1,7 @@
 import CarouselSection from "./components/CarouselSection";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import TwoImageSection from "./components/TwoImageSection";
-import ProductsGrid from "./ProductsGrid";
+import ProductsGrid from "./components/ProductsGrid";
 
 export default function Home() {
   const newArrivals = [
@@ -138,7 +136,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <Header />
       <HeroSection />
       <main>
         <div className="min-h-[90vh]">
@@ -161,7 +158,6 @@ export default function Home() {
           <ProductsGrid title="Shop Bestsellers" products={bestSellers} />
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
