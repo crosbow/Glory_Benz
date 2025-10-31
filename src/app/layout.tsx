@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Footer from "./(home)/components/Footer";
-import Header from "./(home)/components/Header";
+import Footer from "./(home)/components/footer/Footer";
+import Header from "./(home)/components/header/Header";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Deck Fashion",
+  title: "Glory Fashion - Online clothing store",
   description:
     "Shop Men’s T-shirts, Oversized T-shirts, Joggers. Build your future with FREEDOM stitched into every design. Types: T-shirt, Polo Shirts",
 };

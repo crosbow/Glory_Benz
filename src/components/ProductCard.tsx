@@ -11,7 +11,7 @@ const ProductCard = ({ product, className = "" }) => (
         href={product.href}
       >
         <div className="relative">
-          <div className="block relative pb-[133%]">
+          <div className="block relative pb-[133%] transition-all duration-700">
             <Image
               src={product.image}
               alt="Product Flat"
@@ -23,7 +23,7 @@ const ProductCard = ({ product, className = "" }) => (
               <Image
                 src={product.image2}
                 alt={product.alt2}
-                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200 ease-in-out md:group-hover:opacity-100"
+                className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200 ease-in-out md:group-hover:opacity-100 "
                 width={300}
                 height={400}
               />
@@ -32,20 +32,20 @@ const ProductCard = ({ product, className = "" }) => (
               <div>
                 <ul className="flex gap-3 mb-5 justify-center">
                   <li
-                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center -translate-x-4 scale-95
-                   group-hover:translate-x-0 group-hover:scale-100 transition-all duration-700 "
+                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center - 
+                    transition-all duration-700 "
                   >
                     <HeartIcon />
                   </li>
 
                   <li
-                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center translate-x-4 scale-95
-                   group-hover:translate-x-0 group-hover:scale-100 transition-all duration-700 "
+                    className="bg-[#ededed] text-[#b56c22] p-1.5 rounded-full flex justify-center items-center  
+                     transition-all duration-700 "
                   >
                     <DetailsIcon />
                   </li>
                 </ul>
-                <button className="bg-[#b56c22] px-4 text-white uppercase cursor-pointer mb-5 text-xs font-semibold py-2 translate-y-7 group-hover:translate-y-0 transition-all duration-700">
+                <button className="bg-[#b56c22] px-4 text-white uppercase cursor-pointer mb-5 text-xs font-semibold py-2 translate-y-1 group-hover:translate-y-0 transition-all duration-700">
                   Add To Cart
                 </button>
               </div>
